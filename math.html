@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math</title>
+</head>
+<body>
+    <form action="">
+         <input id="input" type="text" autofocus>
+         <button id="array" >Array</button>
+         <button id="print">Print</button>
+    </form>
+    <h1 id="Result"></h1>
+
+  <script>
+      let aaray = []
+      let input = document.querySelector("#input")
+      let arrayBttn = document.querySelector("#array")
+      let printBtn = document.querySelector("#print")
+      let para = document.querySelector("#Result")
+
+
+      arrayBttn.onclick = (e)=>{
+          e.preventDefault()
+          aaray.push(input.value)
+          console.log(aaray)
+      }
+
+      printBtn.onclick = (w) =>{
+        w.preventDefault()
+        para.innerHTML = ""
+        para.innerHTML += aaray
+      } 
+
+      setInterval(() => {
+        
+      }, 1000);
+      
+
+     
+
+
+
+
+  </script>
+
+</body>
+</html>

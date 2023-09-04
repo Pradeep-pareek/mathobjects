@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Function</title>
+</head>
+
+<body>
+
+
+  <button>Click</button>
+    <p class="pera"></p>
+    <h3></h3>
+
+
+    <p class="peraa">This</p>
+    <p class="peraa">is</p>
+    <p class="peraa">a</p>
+    <p class="peraa">Text</p>
+    <h3 id="headpera"></h3>
+
+    <script>
+        let bttn = document.querySelector("button")
+        let pera = document.querySelector("p")
+        let head = document.querySelector("h3")
+        let count = 0;
+
+        // .....
+        let Text =  document.querySelector(".peraa")
+        let perahead =  document.querySelector("#headpera")
+
+        bttn.onclick = () => {
+            if (count == 0) {
+                pera.innerHTML = "Hello world";
+            } else {
+                pera.style.color = "red";
+            }
+            count++
+        }
+
+
+        
+        for(let i = 0; i<Text.length; i++ ){
+                Text[i].onclick = () => {
+                    perahead.innerHTML = Text[i].innerHTML
+                } 
+        }
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
